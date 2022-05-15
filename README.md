@@ -1,4 +1,4 @@
-# 15.3.1-textov-_analyz-tor-ifrovanie_js
+# 15.3.1-textovy-_analyzator-sifrovanie_js
 Cieľom tejto úlohy bude naprogramovať textový analyzátor: 
  HTML bude obsahovať: - textarea na zadanie textu a tlačidlo na spustenie analýzy 
 - input na vyhľadávanie (search box) a tlačidlo "hľadaj", následne sa zobrazí informácia, či bol hľadaný text nájdený 
