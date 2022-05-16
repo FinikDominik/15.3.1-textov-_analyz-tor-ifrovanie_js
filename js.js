@@ -17,10 +17,10 @@ let btnVyhl = document.getElementById('btnvyhl');
 
         if( result == true) {
             res.style.color = 'greenyellow';
-            res.innerHTML += 'Hladaný výraz sa v texte nachádza :-)';
+            res.innerHTML += 'Hladaný text sa v texte nachádza :-)';
         }else {
             res.style.color = 'red';
-            res.innerHTML += 'Hladaný výraz sa v texte nenachádza :-(';
+            res.innerHTML += 'Hladaný text sa v texte nenachádza :-(';
         }
 }
 let btnanal = document.getElementById('btnanal');
