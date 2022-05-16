@@ -22,8 +22,7 @@ let btnVyhl = document.getElementById('btnvyhl');
             res.style.color = 'red';
             res.innerHTML += 'Hladaný výraz sa v texte nenachádza :-(';
         }
-        
- }
+}
 let btnanal = document.getElementById('btnanal');
     btnanal.onclick = function(event){
         event.preventDefault();
@@ -44,18 +43,14 @@ let btnanal = document.getElementById('btnanal');
         let PureWords = vlozText.replace(/[^a-žA-ž ]/g," ");
         let NS = PureWords.split(' ');
 
-
         function NajdiDlskuSlova(str) {
             let longestWord = 0;
-                
                 for(let i = 0; i < NS.length; i++){
                     if(NS[i].length > longestWord){ 
                     longestWord = NS[i].length; 
                      }
                 }
                 return longestWord; 
-
-                
         }
         DlskaSlova = NajdiDlskuSlova(PureWords);
 
@@ -75,9 +70,7 @@ let btnanal = document.getElementById('btnanal');
         Divcont.innerHTML += "<p>" + "Dlžka textu:   " + N + "<br>" + "Dlžka textu bez medzier:   " + NM + "<br>" + "Počet číslic:   " + Nreg + "<br>" + "Najdlhšie slovo:   " + Najdlhsie + "<br>" +  "Počet písmen najdlhšieho slova:   " + DlskaSlova + "</p>";    
 
 }
-
  //         šifrovanie textu
-
 
 let btnSif = document.getElementById('btnSif');
     btnSif.onclick = function(event){
@@ -106,13 +99,11 @@ let btnSif = document.getElementById('btnSif');
         let sif21 = sif20.replaceAll("B", "8");
         let sif22 = sif21;
         let sif23 = sif22.replaceAll("b", "8");
-       
 
         // vytvorenie zápisu vysledkov do div
 
         if(Divcont.innerHTML !== null || "" ) {
             Divcont.innerHTML = "";
         }
-        Divcont.innerHTML += "<p>" + sif23 + "</p>";    
-
+        Divcont.innerHTML += "<p>" + sif23 + "</p>"; 
 }
