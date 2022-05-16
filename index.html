@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <h2>Vlož text na analýzu, alebo šifrovanie</h2>
+    <textarea name="" id="Vloztext" cols="20" rows="10" ></textarea>
     <form>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <input type="text" id="input1" required/>
-        <input type="number" id="input2" required/>
-        <button type="submit" id="btnResult" value="Submit" name="" >=</button>
-        <input type="text" id="res" name="" value=""  readonly/>
-        <div style="position: relative;">
-            <div class="zoznam" id="container"></div>
-                <h3 style="text-align: center;">Operácie</h3>
+        <input type="text" id="input1" placeholder="Hladaj..."/>
+        <button type="submit" id="btnvyhl" value="Submit" name="" >Vyhladať</button>
+        <button type="submit" id="btnanal" value="Submit" name="" >Analyzovať</button>
+        <button type="submit" id="btnSif" value="Submit" name="" >Zašifrovať</button>
+        <p  id="res"></p>
+        <div>
+            <div class="Vypis" id="container"></div>
+                <h3>Výsledok</h3>
         </div>
     </form>
 
